@@ -25,13 +25,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6CCE7F791AD2D4800071AD85 /* MacAppIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacAppIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCE7F791AD2D4800071AD85 /* BLE_Mac_Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLE_Mac_Scanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCE7F7D1AD2D4800071AD85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CCE7F7E1AD2D4800071AD85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CCE7F801AD2D4800071AD85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6CCE7F821AD2D4800071AD85 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6CCE7F851AD2D4800071AD85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6CCE7F8B1AD2D4800071AD85 /* MacAppIntroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacAppIntroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCE7F8B1AD2D4800071AD85 /* BLE_Mac_ScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLE_Mac_ScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCE7F901AD2D4800071AD85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CCE7F911AD2D4800071AD85 /* MacAppIntroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacAppIntroTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,8 +66,8 @@
 		6CCE7F7A1AD2D4800071AD85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6CCE7F791AD2D4800071AD85 /* MacAppIntro.app */,
-				6CCE7F8B1AD2D4800071AD85 /* MacAppIntroTests.xctest */,
+				6CCE7F791AD2D4800071AD85 /* BLE_Mac_Scanner.app */,
+				6CCE7F8B1AD2D4800071AD85 /* BLE_Mac_ScannerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,9 +112,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6CCE7F781AD2D4800071AD85 /* MacAppIntro */ = {
+		6CCE7F781AD2D4800071AD85 /* BLE_Mac_Scanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CCE7F951AD2D4800071AD85 /* Build configuration list for PBXNativeTarget "MacAppIntro" */;
+			buildConfigurationList = 6CCE7F951AD2D4800071AD85 /* Build configuration list for PBXNativeTarget "BLE_Mac_Scanner" */;
 			buildPhases = (
 				6CCE7F751AD2D4800071AD85 /* Sources */,
 				6CCE7F761AD2D4800071AD85 /* Frameworks */,
@@ -124,14 +124,14 @@
 			);
 			dependencies = (
 			);
-			name = MacAppIntro;
+			name = BLE_Mac_Scanner;
 			productName = MacAppIntro;
-			productReference = 6CCE7F791AD2D4800071AD85 /* MacAppIntro.app */;
+			productReference = 6CCE7F791AD2D4800071AD85 /* BLE_Mac_Scanner.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6CCE7F8A1AD2D4800071AD85 /* MacAppIntroTests */ = {
+		6CCE7F8A1AD2D4800071AD85 /* BLE_Mac_ScannerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6CCE7F981AD2D4800071AD85 /* Build configuration list for PBXNativeTarget "MacAppIntroTests" */;
+			buildConfigurationList = 6CCE7F981AD2D4800071AD85 /* Build configuration list for PBXNativeTarget "BLE_Mac_ScannerTests" */;
 			buildPhases = (
 				6CCE7F871AD2D4800071AD85 /* Sources */,
 				6CCE7F881AD2D4800071AD85 /* Frameworks */,
@@ -142,9 +142,9 @@
 			dependencies = (
 				6CCE7F8D1AD2D4800071AD85 /* PBXTargetDependency */,
 			);
-			name = MacAppIntroTests;
+			name = BLE_Mac_ScannerTests;
 			productName = MacAppIntroTests;
-			productReference = 6CCE7F8B1AD2D4800071AD85 /* MacAppIntroTests.xctest */;
+			productReference = 6CCE7F8B1AD2D4800071AD85 /* BLE_Mac_ScannerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -165,7 +165,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6CCE7F741AD2D4800071AD85 /* Build configuration list for PBXProject "MacAppIntro" */;
+			buildConfigurationList = 6CCE7F741AD2D4800071AD85 /* Build configuration list for PBXProject "BLE_Mac_Scanner" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -178,8 +178,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6CCE7F781AD2D4800071AD85 /* MacAppIntro */,
-				6CCE7F8A1AD2D4800071AD85 /* MacAppIntroTests */,
+				6CCE7F781AD2D4800071AD85 /* BLE_Mac_Scanner */,
+				6CCE7F8A1AD2D4800071AD85 /* BLE_Mac_ScannerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -226,7 +226,7 @@
 /* Begin PBXTargetDependency section */
 		6CCE7F8D1AD2D4800071AD85 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6CCE7F781AD2D4800071AD85 /* MacAppIntro */;
+			target = 6CCE7F781AD2D4800071AD85 /* BLE_Mac_Scanner */;
 			targetProxy = 6CCE7F8C1AD2D4800071AD85 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -327,7 +327,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MacAppIntro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BLE_Mac_Scanner;
 			};
 			name = Debug;
 		};
@@ -338,7 +338,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MacAppIntro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BLE_Mac_Scanner;
 			};
 			name = Release;
 		};
@@ -357,8 +357,8 @@
 				);
 				INFOPLIST_FILE = MacAppIntroTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacAppIntro.app/Contents/MacOS/MacAppIntro";
+				PRODUCT_NAME = BLE_Mac_ScannerTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLE_Mac_Scanner.app/Contents/MacOS/BLE_Mac_Scanner";
 			};
 			name = Debug;
 		};
@@ -373,15 +373,15 @@
 				);
 				INFOPLIST_FILE = MacAppIntroTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacAppIntro.app/Contents/MacOS/MacAppIntro";
+				PRODUCT_NAME = BLE_Mac_ScannerTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLE_Mac_Scanner.app/Contents/MacOS/BLE_Mac_Scanner";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6CCE7F741AD2D4800071AD85 /* Build configuration list for PBXProject "MacAppIntro" */ = {
+		6CCE7F741AD2D4800071AD85 /* Build configuration list for PBXProject "BLE_Mac_Scanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6CCE7F931AD2D4800071AD85 /* Debug */,
@@ -390,21 +390,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6CCE7F951AD2D4800071AD85 /* Build configuration list for PBXNativeTarget "MacAppIntro" */ = {
+		6CCE7F951AD2D4800071AD85 /* Build configuration list for PBXNativeTarget "BLE_Mac_Scanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6CCE7F961AD2D4800071AD85 /* Debug */,
 				6CCE7F971AD2D4800071AD85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		6CCE7F981AD2D4800071AD85 /* Build configuration list for PBXNativeTarget "MacAppIntroTests" */ = {
+		6CCE7F981AD2D4800071AD85 /* Build configuration list for PBXNativeTarget "BLE_Mac_ScannerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6CCE7F991AD2D4800071AD85 /* Debug */,
 				6CCE7F9A1AD2D4800071AD85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

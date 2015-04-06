@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MacAppIntro.xcodeproj">
+      location = "self:BLE_Mac_Scanner.xcodeproj">
    </FileRef>
 </Workspace>

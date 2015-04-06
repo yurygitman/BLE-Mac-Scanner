@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6CCE7F781AD2D4800071AD85"
-               BuildableName = "MacAppIntro.app"
-               BlueprintName = "MacAppIntro"
-               ReferencedContainer = "container:MacAppIntro.xcodeproj">
+               BuildableName = "BLE_Mac_Scanner.app"
+               BlueprintName = "BLE_Mac_Scanner"
+               ReferencedContainer = "container:BLE_Mac_Scanner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6CCE7F8A1AD2D4800071AD85"
-               BuildableName = "MacAppIntroTests.xctest"
-               BlueprintName = "MacAppIntroTests"
-               ReferencedContainer = "container:MacAppIntro.xcodeproj">
+               BuildableName = "BLE_Mac_ScannerTests.xctest"
+               BlueprintName = "BLE_Mac_ScannerTests"
+               ReferencedContainer = "container:BLE_Mac_Scanner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6CCE7F8A1AD2D4800071AD85"
-               BuildableName = "MacAppIntroTests.xctest"
-               BlueprintName = "MacAppIntroTests"
-               ReferencedContainer = "container:MacAppIntro.xcodeproj">
+               BuildableName = "BLE_Mac_ScannerTests.xctest"
+               BlueprintName = "BLE_Mac_ScannerTests"
+               ReferencedContainer = "container:BLE_Mac_Scanner.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6CCE7F781AD2D4800071AD85"
-            BuildableName = "MacAppIntro.app"
-            BlueprintName = "MacAppIntro"
-            ReferencedContainer = "container:MacAppIntro.xcodeproj">
+            BuildableName = "BLE_Mac_Scanner.app"
+            BlueprintName = "BLE_Mac_Scanner"
+            ReferencedContainer = "container:BLE_Mac_Scanner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6CCE7F781AD2D4800071AD85"
-            BuildableName = "MacAppIntro.app"
-            BlueprintName = "MacAppIntro"
-            ReferencedContainer = "container:MacAppIntro.xcodeproj">
+            BuildableName = "BLE_Mac_Scanner.app"
+            BlueprintName = "BLE_Mac_Scanner"
+            ReferencedContainer = "container:BLE_Mac_Scanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6CCE7F781AD2D4800071AD85"
-            BuildableName = "MacAppIntro.app"
-            BlueprintName = "MacAppIntro"
-            ReferencedContainer = "container:MacAppIntro.xcodeproj">
+            BuildableName = "BLE_Mac_Scanner.app"
+            BlueprintName = "BLE_Mac_Scanner"
+            ReferencedContainer = "container:BLE_Mac_Scanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
