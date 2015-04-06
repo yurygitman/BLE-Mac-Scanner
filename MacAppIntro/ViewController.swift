@@ -182,6 +182,7 @@ func updateOutputText(passedString: String ){
         var myNameString = peripheral.name
         
         
+        
         let myTuple = (myUUIDString, myRSSIString, "\(myNameString)")
         myPeripheralDictionary[myTuple.0] = myTuple
         
