@@ -21,11 +21,11 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
     let myCentralManager = CBCentralManager()
     var peripheralArray = [CBPeripheral]() // create now empty array.
 
-    var fullPeripheralArray = [("UUIDString","RSSI", "Name")]
+    var fullPeripheralArray = [("UUIDString","RSSI", "Name", "Services1")]
     
-    var myPeripheralDictionary:[String:(String, String, String)] = ["UUIDString":("UUIDString","RSSI", "Name")]
+    var myPeripheralDictionary:[String:(String, String, String, String)] = ["UUIDString":("UUIDString","RSSI", "Name","Services1")]
     
-    var cleanAndSortedArray = [("UUIDString","RSSI", "Name")]
+    var cleanAndSortedArray = [("UUIDString","RSSI", "Name","Services1")]
 
     
     
@@ -53,6 +53,36 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
         
     }
 
+    @IBAction func refreshButton(sender: NSButtonCell) {
+       
+        
+        
+        if sender.state == 1{
+            updateStatusLabel("Scannning")
+            myCentralManager.scanForPeripheralsWithServices(nil, options: nil )   // call to scan for services
+            
+            
+        } else {
+            updateStatusLabel("Not Scanning")
+            myCentralManager.stopScan()
+        
+            fullPeripheralArray = [("","","","")]
+            cleanAndSortedArray = [("","","","")]
+            tableView.reloadData()
+       
+        
+        
+        
+        }
+
+        
+        
+        
+        
+       
+    
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +100,7 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
     // NSTableView
     
     func numberOfRowsInTableView(tableView: NSTableView) -> Int {
-        return fullPeripheralArray.count
+        return cleanAndSortedArray.count
     }
     
     
@@ -92,10 +122,16 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
 
         }
     
+        if tableColumn?.identifier == "forth"{
+            let myString = "\(cleanAndSortedArray[row].3)"
+            return myString
+            
+        }
             
             
         else{
-            return "not id'ed"
+            let myString = "\(cleanAndSortedArray[row].3)"
+            return myString
         }
     }
     
@@ -180,10 +216,40 @@ func updateOutputText(passedString: String ){
         let myUUIDString = peripheral.identifier.UUIDString
         let myRSSIString = String(RSSI.intValue)
         var myNameString = peripheral.name
+        var myAdvertisedServices = peripheral.services
+        var myServices1 = peripheral.services
+        var serviceString = " service string "
+        
+        var myArray = peripheral.services
+    
+       
+        
+        serviceString = "service: \(myArray)"
+        println(serviceString)
+        updateOutputText("service:" + serviceString)
+            
+    
+        updateOutputText("\r")
+        updateOutputText("UUID: " + myUUIDString)
+        updateOutputText("RSSI: " + myRSSIString)
+        updateOutputText("Name:  \(myNameString)")
+        updateOutputText("AddDataServices: " + serviceString)
+//        updateOutputText("MyServices:  " + myServices1 )
+
         
         
+      //  for service in myServices1{
+            
+        //    if (service.name != nil) {
+   //         println("Service: \()")
+    //        serviceString = "Service: \(service.serviceName)"
+        //    } else{
+            
+         //   serviceString = "Service: NOT FOUND "
+      //
+       // }
         
-        let myTuple = (myUUIDString, myRSSIString, "\(myNameString)")
+        let myTuple = (myUUIDString, myRSSIString, "\(myNameString)", serviceString )
         myPeripheralDictionary[myTuple.0] = myTuple
         
         // Clean Array
@@ -197,7 +263,7 @@ func updateOutputText(passedString: String ){
         // Sort Array by RSSI
         //from http://www.andrewcbancroft.com/2014/08/16/sort-yourself-out-sorting-an-array-in-swift/
         cleanAndSortedArray = sorted(fullPeripheralArray,{
-            (str1: (String,String,String) , str2: (String,String,String) ) -> Bool in
+            (str1: (String,String,String,String) , str2: (String,String,String,String) ) -> Bool in
             return str1.1.toInt() > str2.1.toInt()
         })
         
@@ -205,15 +271,11 @@ func updateOutputText(passedString: String ){
         
 
         
-        updateOutputText("\r")
-        updateOutputText("UUID: \(peripheral)")
-        updateOutputText("RSSI: \(RSSI)")
-        updateOutputText("Name: \(peripheral.identifier.UUIDString)")
-
+        
         tableView.reloadData()
         
         }
-    
+    //}
     
 
 
