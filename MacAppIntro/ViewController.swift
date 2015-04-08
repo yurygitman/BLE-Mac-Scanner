@@ -234,20 +234,7 @@ func updateOutputText(passedString: String ){
         updateOutputText("RSSI: " + myRSSIString)
         updateOutputText("Name:  \(myNameString)")
         updateOutputText("AddDataServices: " + serviceString)
-//        updateOutputText("MyServices:  " + myServices1 )
 
-        
-        
-      //  for service in myServices1{
-            
-        //    if (service.name != nil) {
-   //         println("Service: \()")
-    //        serviceString = "Service: \(service.serviceName)"
-        //    } else{
-            
-         //   serviceString = "Service: NOT FOUND "
-      //
-       // }
         
         let myTuple = (myUUIDString, myRSSIString, "\(myNameString)", serviceString )
         myPeripheralDictionary[myTuple.0] = myTuple
