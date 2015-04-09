@@ -217,26 +217,29 @@ func updateOutputText(passedString: String ){
         let myRSSIString = String(RSSI.intValue)
         var myNameString = peripheral.name
         var myAdvertisedServices = peripheral.services
-        var myServices1 = peripheral.services
-        var serviceString = " service string "
         
-        var myArray = peripheral.services
-    
+      //  var myServices1 = peripheral.services
+      //  var serviceString = " service string "
+        
+        var myArray = advertisementData
+        var advertString = "\(advertisementData)"
+        
        
         
-        serviceString = "service: \(myArray)"
-        println(serviceString)
-        updateOutputText("service:" + serviceString)
+     //   serviceString = "service: \(myArray)"
+     //   println(serviceString)
+     //   updateOutputText("service:" + serviceString)
             
     
         updateOutputText("\r")
         updateOutputText("UUID: " + myUUIDString)
         updateOutputText("RSSI: " + myRSSIString)
         updateOutputText("Name:  \(myNameString)")
-        updateOutputText("AddDataServices: " + serviceString)
+        updateOutputText("advertString: " + advertString)
 
         
-        let myTuple = (myUUIDString, myRSSIString, "\(myNameString)", serviceString )
+        
+        let myTuple = (myUUIDString, myRSSIString, "\(myNameString)", advertString )
         myPeripheralDictionary[myTuple.0] = myTuple
         
         // Clean Array
