@@ -18,7 +18,7 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
     var myArray = ["One","Two","Three","Four"]
 
     //  BLE Stuff
-    let myCentralManager = CBCentralManager()
+    var myCentralManager = CBCentralManager()
     var peripheralArray = [CBPeripheral]() // create now empty array.
 
     var fullPeripheralArray = [("UUIDString","RSSI", "Name", "Services1")]
