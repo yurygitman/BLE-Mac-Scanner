@@ -10,6 +10,7 @@ import Cocoa
 import CoreBluetooth
 
 class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDelegate, NSTableViewDataSource {
+    
 
     // 
     var starterArray:[AnyObject] = NSLocale.preferredLanguages()
@@ -265,7 +266,7 @@ func updateOutputText(passedString: String ){
         tableView.reloadData()
         
         }
-    //}
+    
     
 
 
