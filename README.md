@@ -1,7 +1,7 @@
 # BLE-Mac-Scanner
 
 # Screen Shot
-![ScreenShot](https://github.com/samuraipapa/4phyiscsBodies/blob/master/screen.gif) 
+![ScreenShot](https://github.com/samuraipapa/BLE-Mac-Scanner/blob/master/screen.png) 
 
 # Code Runs On:
 + iOS 8.3+
