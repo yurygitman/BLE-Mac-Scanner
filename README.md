@@ -1,4 +1,7 @@
 # BLE-Mac-Scanner
++ Scan and Print Advertising Data of BLE Devices Near Your Mac.
++ Written in Swift.
++ CBCentralManagerDelegate, CBPeripheralDelegate, and NSTableViewDataSource are used. 
 
 # Screen Shot
 ![ScreenShot](https://github.com/samuraipapa/BLE-Mac-Scanner/blob/master/screen.png) 
