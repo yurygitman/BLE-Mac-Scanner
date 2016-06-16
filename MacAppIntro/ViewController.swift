@@ -39,7 +39,7 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
     
     @IBAction func scanButtonCell(sender: NSButtonCell) {
         
-        println("sender.state" + String(sender.state) + "\r")
+        print("sender.state" + String(sender.state) + "\r")
         
         if sender.state == 1{
             updateStatusLabel("Scannning")
@@ -161,9 +161,9 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
     
 
     
-    func centralManagerDidUpdateState(central: CBCentralManager!) {
+    func centralManagerDidUpdateState(central: CBCentralManager) {
         
-        println("centralManagerDidUpdateState")
+        print("centralManagerDidUpdateState")
         
         /*
         typedef enum {
@@ -211,19 +211,19 @@ func updateOutputText(passedString: String ){
     }
 
     
-    func centralManager(central: CBCentralManager!, didDiscoverPeripheral peripheral: CBPeripheral!, advertisementData: [NSObject : AnyObject]!, RSSI: NSNumber!) {
+    func centralManager(central: CBCentralManager, didDiscoverPeripheral peripheral: CBPeripheral, advertisementData: [String : AnyObject], RSSI: NSNumber) {
     
         // Refresh Entry or Make an New Entry into Dictionary
         let myUUIDString = peripheral.identifier.UUIDString
         let myRSSIString = String(RSSI.intValue)
-        var myNameString = peripheral.name
+        let myNameString = peripheral.name
         var myAdvertisedServices = peripheral.services
         
       //  var myServices1 = peripheral.services
       //  var serviceString = " service string "
         
         var myArray = advertisementData
-        var advertString = "\(advertisementData)"
+        let advertString = "\(advertisementData)"
         
        
         
@@ -253,9 +253,9 @@ func updateOutputText(passedString: String ){
         
         // Sort Array by RSSI
         //from http://www.andrewcbancroft.com/2014/08/16/sort-yourself-out-sorting-an-array-in-swift/
-        cleanAndSortedArray = sorted(fullPeripheralArray,{
+        cleanAndSortedArray = fullPeripheralArray.sort({
             (str1: (String,String,String,String) , str2: (String,String,String,String) ) -> Bool in
-            return str1.1.toInt() > str2.1.toInt()
+            return Int(str1.1) > Int(str2.1)
         })
         
 
