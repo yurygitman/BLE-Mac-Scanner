@@ -160,9 +160,11 @@
 				TargetAttributes = {
 					6CCE7F781AD2D4800071AD85 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0830;
 					};
 					6CCE7F8A1AD2D4800071AD85 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0830;
 						TestTargetID = 6CCE7F781AD2D4800071AD85;
 					};
 				};
@@ -330,6 +332,7 @@
 				INFOPLIST_FILE = MacAppIntro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = BLE_Mac_Scanner;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -341,6 +344,7 @@
 				INFOPLIST_FILE = MacAppIntro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = BLE_Mac_Scanner;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -360,6 +364,7 @@
 				INFOPLIST_FILE = MacAppIntroTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = BLE_Mac_ScannerTests;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLE_Mac_Scanner.app/Contents/MacOS/BLE_Mac_Scanner";
 			};
 			name = Debug;
@@ -376,6 +381,7 @@
 				INFOPLIST_FILE = MacAppIntroTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = BLE_Mac_ScannerTests;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLE_Mac_Scanner.app/Contents/MacOS/BLE_Mac_Scanner";
 			};
 			name = Release;
