@@ -55,7 +55,6 @@ class ViewController: NSViewController, CBCentralManagerDelegate, CBPeripheralDe
     
     
     //  UI Stuff
-    @IBOutlet weak var inputText: NSTextField!
     @IBOutlet weak var outputText: NSTextField!
     @IBOutlet weak var labelStatus: NSTextField!
     @IBOutlet weak var tableView: NSTableView!
